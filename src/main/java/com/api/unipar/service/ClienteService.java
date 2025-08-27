@@ -35,6 +35,9 @@ public class ClienteService {
         Cliente clienteSalvo = buscarClientePorId(id);
         BeanUtils.copyProperties(cliente, clienteSalvo, "id");
         return clienteRepository.save(clienteSalvo);
+    }
+    
+    public Cliente buscarClientePorNome(String nome){
         
     }
 }
